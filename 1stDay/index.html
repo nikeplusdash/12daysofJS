@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1st Day of JS</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="./logic.js"></script>
+</head>
+<style>
+    #row {
+        display: flex;
+        justify-content: center;
+    }
+    #data{
+        width: 92%;
+        margin: 4px;
+    }
+    @media (min-width: 768px) {
+        .container {
+            width: 90%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            width: 70%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 40%;
+        }
+    }
+</style>
+
+<body>
+    <div id="accordion" class="container mt-3">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne" id="but">
+                    TO-DO List
+                </button>
+            </div>
+            <div class="row" id="row">
+                    <input type="textarea" name="to-do" class="form-control" id="data" roq=3>
+                   <!-- <button type="submit" class="btn btn-primary" id="submit">Submit</button> -->
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <h5>
+                    <div class="card-body"></div>
+                </h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
